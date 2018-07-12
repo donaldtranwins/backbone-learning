@@ -31,7 +31,4 @@ app.Flower = Backbone.Model.extend({
 
     }
 
-    //add onchanges
-
-
 });
