@@ -17,7 +17,7 @@ app.allFlowersView = Backbone.View.extend({
     addFlower: function(flower) {
         //new view is instantiated by passing in the model
         var flowerView = new app.singleFlowerView ({ model: flower });
-        //the view builds itself and gets the element returned.  that element is appended to the parent element
+        //the view builds itself using render, triggering the addFlower method and gets the element returned.  that rendered element is appended to the target element
         this.$el.append(flowerView.render().el);
     }
 
